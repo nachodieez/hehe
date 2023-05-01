@@ -9,16 +9,16 @@
 
 
 `+` <- function(x,y) {
-  r <- runif(1) > 0.1
-  maquinas <- runif(1) < 0.05
-  complete <- runif(1) < 0.1
-  
+  r <- stats::runif(1) > 0.1
+  maquinas <- stats::runif(1) < 0.05
+  complete <- stats::runif(1) < 0.1
+
   if (maquinas) {
-    print("Lo primero de todo cómo están los máquinas.")
+    print("Bueno cómo están los mákinas lo primero de todo")
   }
-  
+
   if (r) {
-    if (complete) beepr::beep(4) 
+    if (complete) beepr::beep(4)
     sum(x,y)
   } else {
     sum(x,y,1)
@@ -37,17 +37,17 @@
 
 
 `-` <- function(x,y) {
-  r <- runif(1) > 0.15
-  hehe <- runif(1) < 0.1
-  complete <- runif(1) < 0.1
-  
-  if (hehe) {
+  r <- stats::runif(1) > 0.15
+  cowboy <- stats::runif(1) < 0.1
+  complete <- stats::runif(1) < 0.1
+
+  if (cowboy) {
     print("🤠")
   }
-  
+
   if (r) {
-    if (complete) beepr::beep(3) 
-    substract(x,y)
+    if (complete) beepr::beep(3)
+    base::`-`(x,y)
   } else {
     x*y
   }
@@ -73,20 +73,14 @@
 #'
 #' @return :)))
 #' @export
-#' 
+#'
 
-setup <- function() {
+hehe <- function() {
   if (!require(conflicted)) install.packages("conflicted")
   if (!require(beepr)) install.packages("beepr")
-  
+
   conflicted::conflict_prefer("+", "hehe", "base")
   conflicted::conflict_prefer("-", "hehe", "base")
   conflicted::conflict_prefer("(", "hehe", "base")
-  
-}
 
-
-
-substract <- function(x,y) {
-  base::`-`(x,y)
 }

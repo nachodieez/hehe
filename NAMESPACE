@@ -3,4 +3,5 @@
 export("(")
 export("+")
 export("-")
-export(setup)
+export(hehe)
+export(makinas)
