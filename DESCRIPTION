@@ -1,12 +1,17 @@
 Package: hehe
 Title: Silly little things
-Version: 0.1
+Version: 0.2
 Authors@R: 
-    person("Nacho", "Díez", , "nachodiez10@live.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Nacho", "Díez", , "nachodiez10@live.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports:
+    audio,
+    beepr,
+    conflicted,
+    graphics,
+    jpeg
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

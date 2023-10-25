@@ -7,10 +7,10 @@
 `(`(x)
 }
 \arguments{
-\item{x}{:))}
+\item{x}{number}
 }
 \value{
-:)))
+evilness
 }
 \description{
 parenthesis

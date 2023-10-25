@@ -7,7 +7,7 @@
 hehe()
 }
 \value{
-:)))
+evilness
 }
 \description{
 to establish evil

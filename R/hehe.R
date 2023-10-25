@@ -1,13 +1,11 @@
 #' hehehe
 #'
-#' @param x :))
-#' @param y :))
-#' @return :)))
+#' @param x number
+#' @param y another number
+#' @return evilness
 #' @export
 #' @examples
 #' 1 + 2
-
-
 `+` <- function(x,y) {
   r <- stats::runif(1) > 0.1
   maquinas <- stats::runif(1) < 0.05
@@ -28,17 +26,16 @@
 
 #' hehehehehehehehe
 #'
-#' @param x :))
-#' @param y :))
-#' @return :)))
+#' @param x number
+#' @param y another number
+#'
+#' @return evilness
 #' @export
 #' @examples
 #' 2 - 1
-
-
 `-` <- function(x,y) {
-  r <- stats::runif(1) > 0.15
-  cowboy <- stats::runif(1) < 0.1
+  r        <- stats::runif(1) > 0.15
+  cowboy   <- stats::runif(1) < 0.1
   complete <- stats::runif(1) < 0.1
 
   if (cowboy) {
@@ -49,19 +46,17 @@
     if (complete) beepr::beep(3)
     base::`-`(x,y)
   } else {
-    x*y
+    x * y
   }
 }
 
 #' parenthesis
 #'
-#' @param x :))
-#' @return :)))
+#' @param x number
+#' @return evilness
 #' @export
-
-
 `(` <- function(x) {
-  if (runif(1) < 0.1) {
+  if (stats::runif(1) < 0.1) {
     print("Mucho ánimo :))")
     x
   } else {
@@ -71,16 +66,11 @@
 
 #' to establish evil
 #'
-#' @return :)))
+#' @return evilness
 #' @export
 #'
-
 hehe <- function() {
-  if (!require(conflicted)) install.packages("conflicted")
-  if (!require(beepr)) install.packages("beepr")
-
   conflicted::conflict_prefer("+", "hehe", "base")
   conflicted::conflict_prefer("-", "hehe", "base")
   conflicted::conflict_prefer("(", "hehe", "base")
-
 }

@@ -7,12 +7,12 @@
 x + y
 }
 \arguments{
-\item{x}{:))}
+\item{x}{number}
 
-\item{y}{:))}
+\item{y}{another number}
 }
 \value{
-:)))
+evilness
 }
 \description{
 hehehe
