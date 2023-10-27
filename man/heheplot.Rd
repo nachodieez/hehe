@@ -7,5 +7,5 @@
 heheplot()
 }
 \description{
-heheheheheheplot
+This function is deprecated as it doesn't support the clown theme.
 }

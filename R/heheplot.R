@@ -1,7 +1,10 @@
 #' heheheheheheplot
 #'
+#' This function is deprecated as it doesn't support the clown theme.
+#'
 #' @export
 heheplot <- function() {
+  warning("This function is deprecated. See '?heheplot'")
   plot_jpeg(system.file("figures/heheplot.jpg", package="hehe"))
 }
 

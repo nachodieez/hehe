@@ -16,4 +16,4 @@ Currently, the two main functions of the package are the following ones:
 
 - `hehe()`: Surprises may appear 🤠
 - `makinas()`: Bueno cómo están los máquinas lo primero de todo
-- `heheplot()`: heheplot
+- `heheplot()`: heheplot (deprecated)
