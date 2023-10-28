@@ -9,3 +9,6 @@ heheplot()
 \description{
 This function is deprecated as it doesn't support the clown theme.
 }
+\details{
+Use \code{heheplot2} instead.
+}

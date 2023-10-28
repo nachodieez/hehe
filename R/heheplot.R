@@ -1,11 +1,35 @@
 #' heheheheheheplot
 #'
-#' This function is deprecated as it doesn't support the clown theme.
+#' Heheplot. This function is deprecated as it doesn't support the clown theme.
+#' Use \code{heheplot2} instead.
 #'
 #' @export
 heheplot <- function() {
   warning("This function is deprecated. See '?heheplot'")
+}
+
+#' heheplot2
+#'
+#' @export
+heheplot2 <- function() {
   plot_jpeg(system.file("figures/heheplot.jpg", package="hehe"))
+  invisible(structure("", class = "heheplot2"))
+}
+
+#' Clown theme for heheplot2 object
+#'
+#' @param plt Plot.
+#'
+#' @export
+#'
+#' @examples
+#' theme_clown(heheplot2())
+theme_clown <- function(plt) {
+  if (inherits(plt, "heheplot2")) {
+    plot_jpeg(system.file("figures/heheclown.jpg", package="hehe"))
+  } else {
+    stop("Clown theme only works with heheplot2 objects.", call. = FALSE)
+  }
 }
 
 #' jpeg plotter
