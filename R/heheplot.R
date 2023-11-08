@@ -5,6 +5,7 @@
 #'
 #' @export
 heheplot <- function() {
+  plot_jpeg(system.file("figures/heheplot.jpg", package="hehe"))
   warning("This function is deprecated. See '?heheplot'")
 }
 
